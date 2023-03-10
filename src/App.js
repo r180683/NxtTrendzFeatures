@@ -62,7 +62,7 @@ class App extends Component {
     let updatedCart = cartList.map(each => {
       if (each.id === product.id) {
         flag = 1
-        return {...each, quantity: each.quantity + 1}
+        return {...each, quantity: each.quantity + product.quantity}
       }
       return each
     })
